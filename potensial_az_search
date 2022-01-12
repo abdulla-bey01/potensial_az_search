@@ -1,0 +1,78 @@
+void filter(String tip) {
+  List<String> _potensialSuggest = [];
+  if (tip.contains('u')) _potensialSuggest.add(tip.replaceAll('u', 'ı'));
+  if (tip.contains('u')) _potensialSuggest.add(tip.replaceAll('ı', 'u'));
+  if (tip.contains('i')) _potensialSuggest.add(tip.replaceAll('i', 'ı'));
+  if (tip.contains('i')) _potensialSuggest.add(tip.replaceAll('ı', 'i'));
+  if (tip.contains('e')) _potensialSuggest.add(tip.replaceAll('e', 'ə'));
+  if (tip.contains('e')) _potensialSuggest.add(tip.replaceAll('ə', 'e'));
+  if (tip.contains('a')) _potensialSuggest.add(tip.replaceAll('a', 'ə'));
+  if (tip.contains('a')) _potensialSuggest.add(tip.replaceAll('ə', 'a'));
+  if (tip.contains('j')) _potensialSuggest.add(tip.replaceAll('j', 'c'));
+  if (tip.contains('j')) _potensialSuggest.add(tip.replaceAll('c', 'j'));
+  if (tip.contains('dj')) _potensialSuggest.add(tip.replaceAll('dj', 'c'));
+  if (tip.contains('dj')) _potensialSuggest.add(tip.replaceAll('c', 'dj'));
+  if (tip.contains('kh')) _potensialSuggest.add(tip.replaceAll('kh', 'x'));
+  if (tip.contains('kh')) _potensialSuggest.add(tip.replaceAll('x', 'kh'));
+  if (tip.contains('ch')) _potensialSuggest.add(tip.replaceAll('ch', 'ç'));
+  if (tip.contains('ch')) _potensialSuggest.add(tip.replaceAll('ç', 'ch'));
+  if (tip.contains('c')) _potensialSuggest.add(tip.replaceAll('c', 'ç'));
+  if (tip.contains('c')) _potensialSuggest.add(tip.replaceAll('ç', 'c'));
+  if (tip.contains('ci')) _potensialSuggest.add(tip.replaceAll('ci', 'cı'));
+  if (tip.contains('ci')) _potensialSuggest.add(tip.replaceAll('cı', 'ci'));
+  if (tip.contains('ci')) _potensialSuggest.add(tip.replaceAll('ci', 'çı'));
+  if (tip.contains('ci')) _potensialSuggest.add(tip.replaceAll('çı', 'ci'));
+  if (tip.contains('k')) _potensialSuggest.add(tip.replaceAll('k', 'x'));
+  if (tip.contains('k')) _potensialSuggest.add(tip.replaceAll('x', 'k'));
+  if (tip.contains('kch')) _potensialSuggest.add(tip.replaceAll('kch', 'xç'));
+  if (tip.contains('kch')) _potensialSuggest.add(tip.replaceAll('xç', 'kch'));
+  if (tip.contains('khc')) _potensialSuggest.add(tip.replaceAll('khc', 'xç'));
+  if (tip.contains('khch')) _potensialSuggest.add(tip.replaceAll('khch', 'xç'));
+  if (tip.contains('khch')) _potensialSuggest.add(tip.replaceAll('xç', 'khch'));
+  if (tip.contains('kc')) _potensialSuggest.add(tip.replaceAll('xç', 'kc'));
+  if (tip.contains('kc')) _potensialSuggest.add(tip.replaceAll('kc', 'xç'));
+  if (tip.contains('khci'))
+    _potensialSuggest.add(tip.replaceAll('xçı', 'khci'));
+  if (tip.contains('khci'))
+    _potensialSuggest.add(tip.replaceAll('khci', 'xçı'));
+  if (tip.contains('khci'))
+    _potensialSuggest.add(tip.replaceAll('xçı', 'khci'));
+  if (tip.contains('s')) _potensialSuggest.add(tip.replaceAll('s', 'ş'));
+  if (tip.contains('s')) _potensialSuggest.add(tip.replaceAll('ş', 's'));
+  if (tip.contains('sh')) _potensialSuggest.add(tip.replaceAll('sh', 'ş'));
+  if (tip.contains('sh')) _potensialSuggest.add(tip.replaceAll('ş', 'sh'));
+  if (tip.contains('w')) _potensialSuggest.add(tip.replaceAll('w', 'ş'));
+  if (tip.contains('w')) _potensialSuggest.add(tip.replaceAll('ş', 'w'));
+  if (tip.contains('se')) _potensialSuggest.add(tip.replaceAll('se', 'şə'));
+  if (tip.contains('se')) _potensialSuggest.add(tip.replaceAll('şə', 'se'));
+  if (tip.contains('she')) _potensialSuggest.add(tip.replaceAll('she', 'şə'));
+  if (tip.contains('she')) _potensialSuggest.add(tip.replaceAll('şə', 'she'));
+  if (tip.contains('we')) _potensialSuggest.add(tip.replaceAll('we', 'şə'));
+  if (tip.contains('we')) _potensialSuggest.add(tip.replaceAll('şə', 'we'));
+  if (tip.contains('o')) _potensialSuggest.add(tip.replaceAll('o', 'ö'));
+  if (tip.contains('o')) _potensialSuggest.add(tip.replaceAll('ö', 'o'));
+  if (tip.contains('u')) _potensialSuggest.add(tip.replaceAll('u', 'ü'));
+  if (tip.contains('u')) _potensialSuggest.add(tip.replaceAll('ü', 'u'));
+  if (tip.contains('khac'))
+    _potensialSuggest.add(tip.replaceAll('khac', 'xaç'));
+  if (tip.contains('khac'))
+    _potensialSuggest.add(tip.replaceAll('xaç', 'khac'));
+  if (tip.contains('khach'))
+    _potensialSuggest.add(tip.replaceAll('khach', 'xaç'));
+  if (tip.contains('khach'))
+    _potensialSuggest.add(tip.replaceAll('xaç', 'khach'));
+  if (tip.contains('g')) _potensialSuggest.add(tip.replaceAll('g', 'ğ'));
+  if (tip.contains('g')) _potensialSuggest.add(tip.replaceAll('ğ', 'g'));
+  if (tip.contains('gh')) _potensialSuggest.add(tip.replaceAll('gh', 'ğ'));
+  if (tip.contains('gh')) _potensialSuggest.add(tip.replaceAll('ğ', 'gh'));
+  if (tip.contains('shus'))
+    _potensialSuggest.add(tip.replaceAll('shus', 'şuş'));
+  if (tip.contains('shus'))
+    _potensialSuggest.add(tip.replaceAll('şuş', 'shus'));
+  if (tip.contains('sush'))
+    _potensialSuggest.add(tip.replaceAll('sush', 'şuş'));
+  if (tip.contains('sush'))
+    _potensialSuggest.add(tip.replaceAll('şuş', 'sush'));
+  if (tip.contains('wa')) _potensialSuggest.add(tip.replaceAll('wa', 'şə'));
+  if (tip.contains('wa')) _potensialSuggest.add(tip.replaceAll('şə', 'wa'));
+}
